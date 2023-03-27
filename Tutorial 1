@@ -1,27 +1,35 @@
 # ////////////////////////1//////////////////////////////
-# number = int(input("Enter a number greater than 0:"))  # Prompt user for input
+# number = int(input("Enter a number greater than 0: "))  # Prompt user for input
 # result = 0  # NameError: name 'result' is not defined
 # if number <= 0:  # Validate user input
 #     print("Invalid input. Number must be greater than 0.")
 # else:
-#     print(sum(range(1, number + 1)))
+#     for i in range(1, number+1):
+#         result += i
+#         print("+", i, end="")
+#     print("=", result)
 
 # ////////////////////////2//////////////////////////////
-# number = int(input("Enter a number greater than 5:"))
+# number = int(input("Enter a number greater than 5: "))
 # result = 0  # NameError: name 'result' is not defined
 # if number <= 5:
 #     print("Invalid input. Number must be greater than 5.")
 # else:
-#     print(sum(range(1, number + 1)))
+#     for i in range(1, number+1):
+#         result += i
+#         print("+", i, end="")
+#     print("=", result)
 
 # ////////////////////////3//////////////////////////////
-# import math
-# number = int(input("Enter a number greater than 5:"))
-# result = 0  # NameError: name 'result' is not defined
+# number = int(input("Enter a number greater than 5: "))
+# result = 1  # NameError: name 'result' is not defined
 # if number <= 5:
 #     print("Invalid input. Number must be greater than 5.")
 # else:
-#     print(math.gamma(number + 1))
+#     for i in range(1, number + 1):
+#         result *= i
+#         print("*", i, end="")
+#     print("=", result)
 
 # ////////////////////////4//////////////////////////////
 # n1 = float(input("Enter the first number: "))
@@ -56,11 +64,11 @@
 # print("The largest number entered is", largest)
 
 # ////////////////////////B//////////////////////////////
-n = int(input("Enter the number of lines: "))
-if n <= 0:  # Validate user input
-    print("Invalid input. Number must be greater than 0.")
-else:
-    for i in range(n):  # For lines
-        for j in range (i+1):   # For *
-            print('*', end='')
-        print()
+# n = int(input("Enter the number of lines: "))
+# if n <= 0:  # Validate user input
+#     print("Invalid input. Number must be greater than 0.")
+# else:
+#     for i in range(n):  # For lines
+#         for j in range (i+1):   # For *
+#             print('*', end='')
+#         print()
