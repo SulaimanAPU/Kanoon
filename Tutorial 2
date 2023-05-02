@@ -1,0 +1,98 @@
+# try:
+ # //////////////////////1////////////////////////////
+    # n = 0  # NameError: name 'n' is not defined
+    # while n <= 0:
+    #     n = int(input("Enter array size greater than 0: "))
+    # arr = [int(input(f"Enter element {i + 1}: ")) for i in range(n)]
+    # print(f"The array has {n} elements: ", end="")
+    # for i in range(n):
+    #     print(arr[i], end="")
+    #     if i < n - 1:
+    #         print(", ", end="")
+    # print()
+
+# //////////////////////2////////////////////////////
+#     def PrintSecondLowest(arr):
+#         set_arr = set(arr)
+#         if len(set_arr) < 2:
+#             print("No second lowest number in the array")
+#             return
+#         sorted_arr = sorted(set_arr)
+#         second_lowest = sorted_arr[1]
+#         print("The second lowest number in the array is:", second_lowest)
+#     PrintSecondLowest(arr)
+# except:
+#     print("! Invalid input !")
+
+# //////////////////////3////////////////////////////
+# for i in range(1, 13):
+#     for j in range(1, 13):
+#         print(i, '*', j, '=', (i * j))
+#     print()
+
+# //////////////////////B1////////////////////////////
+# n = 0
+# while n <= 0:
+#     n = int(input("Enter the number of lines (greater than 0): "))
+# for i in range(1, n + 1):  # For lines
+#     print(' ' * (i-1) + '*' * (n+1-i))
+
+# //////////////////////B2////////////////////////////
+# n = 0
+# m = 0
+# while n <= 0:
+#     n = int(input("Enter the number of lines (greater than 0): "))
+# while m <= 0:
+#     m = int(input("Enter the number of columns (greater than 0): "))
+# for i in range(1, n+1):
+#     print(' ' * (n-i) + '*' * m)
+
+# //////////////////////B3////////////////////////////
+# n = 0  # NameError: name 'n' is not defined
+# while n <= 0:
+#     n = int(input("Enter the number of lines (greater than 0): "))
+# for i in range(1, n+1):
+#     print(' ' * (n-i) + '*' + '*' * (i*2-2))
+
+# //////////////////////B4////////////////////////////
+# n = 0  # NameError: name 'n' is not defined
+# while n <= 0:
+#     n = int(input("Enter the number of lines (greater than 0): "))
+# for i in range(1, n+1):
+#     print(' ' * (i-1) + '*' + '*' * ((n*2)-(i*2)))
+
+# //////////////////////B5////////////////////////////
+# n = 0
+# while n <= 0 or n % 2 == 0:
+#     n = int(input("Enter the number of lines (odd number greater than 0): "))
+# for i in range(1, n + 1):
+#     if i <= n / 2:
+#         print('*' * i, end='')
+#     else:
+#         print('*' * (n - i + 1), end='')
+
+# //////////////////////B6////////////////////////////
+# n = 0
+# while n <= 0:
+#     n = int(input("Enter the number of lines: "))
+# for i in range(1, n + 1):  # for line
+#     for j in range(1, n + 1):  # for *
+#         if i == j:
+#             print(' ', end='')
+#         else:
+#             print('*', end='')
+#     print()
+
+# //////////////////////B7////////////////////////////
+n = 0
+while n <= 0:
+    n = int(input("Enter the number of lines: "))
+if n % 2 == 0:
+    n += 1
+for i in range(1, n + 1):
+    for j in range(1, n + 1):
+        if i == j or j == n - i + 1:
+            print(' ', end='')
+        else:
+            print('*', end='')
+    print()
