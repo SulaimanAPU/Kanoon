@@ -1,15 +1,15 @@
 # try:
- # //////////////////////1////////////////////////////
-    # n = 0  # NameError: name 'n' is not defined
-    # while n <= 0:
-    #     n = int(input("Enter array size greater than 0: "))
-    # arr = [int(input(f"Enter element {i + 1}: ")) for i in range(n)]
-    # print(f"The array has {n} elements: ", end="")
-    # for i in range(n):
-    #     print(arr[i], end="")
-    #     if i < n - 1:
-    #         print(", ", end="")
-    # print()
+# //////////////////////1////////////////////////////
+# n = 0  # NameError: name 'n' is not defined
+# while n <= 0:
+#     n = int(input("Enter array size greater than 0: "))
+# arr = [int(input(f"Enter element {i + 1}: ")) for i in range(n)]
+# print(f"The array has {n} elements: ", end="")
+# for i in range(n):
+#     print(arr[i], end="")
+#     if i < n - 1:
+#         print(", ", end="")
+# print()
 
 # //////////////////////2////////////////////////////
 #     def PrintSecondLowest(arr):
@@ -29,6 +29,17 @@
 #     for j in range(1, 13):
 #         print(i, '*', j, '=', (i * j))
 #     print()
+
+# //////////////////////4////////////////////////////
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)  # formula f = fn-1 + fn-2
+
+
+print("Fibonacci sequence:")
+for i in range(21):
+    print(fibonacci(i), end=' ')
 
 # //////////////////////B1////////////////////////////
 # n = 0
@@ -84,15 +95,15 @@
 #     print()
 
 # //////////////////////B7////////////////////////////
-n = 0
-while n <= 0:
-    n = int(input("Enter the number of lines: "))
-if n % 2 == 0:
-    n += 1
-for i in range(1, n + 1):
-    for j in range(1, n + 1):
-        if i == j or j == n - i + 1:
-            print(' ', end='')
-        else:
-            print('*', end='')
-    print()
+# n = 0
+# while n <= 0:
+#     n = int(input("Enter the number of lines: "))
+# if n % 2 == 0:
+#     n += 1
+# for i in range(1, n + 1):
+#     for j in range(1, n + 1):
+#         if i == j or j == n - i + 1:
+#             print(' ', end='')
+#         else:
+#             print('*', end='')
+#     print()
